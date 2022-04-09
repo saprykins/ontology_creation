@@ -85,12 +85,23 @@ Install the packages that application requires by typing in command line:
 pip install -r requirements.txt
 ```
 
+Activate the same virtual environment in a second terminal window.  
+In Ubuntu:
+```
+source <my_env_name>/bin/activate
+```
+* In case you created virtual environment "venv" you activate it as follows:  
+  ```
+  source ./venv/bin/activate
+  ```
+It will be used to launch main.py file.  
+
 
 # TUTORIAL
 
 ## Run the server  
 
-To run the application after installation, stay in folder "ontology_building" and type the following in command line:  
+To run the application after installation, stay in folder "ontology_building" and type the following in command line where you activated virtual environment:  
 ```
 python wsgi.py
 ```
@@ -105,7 +116,9 @@ The application runs while the command line window is open.
 
 ## Transefer articles from ArXiv to API and Create ontology file  
 
-Open a new terminal window, to let your server run in previous terminal window  
+Open the second terminal window where you activated virtual environment.  
+
+Usage of the second terminal window will let your server run in previous terminal window  
 
 Launch the controller in new terminal window by the command:  
 ```
