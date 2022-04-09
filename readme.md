@@ -94,7 +94,7 @@ source <my_env_name>/bin/activate
   ```
   source ./venv/bin/activate
   ```
-It will be used to launch main.py file.  
+The second terminal window will be used to launch main.py file.  
 
 
 # TUTORIAL
